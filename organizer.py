@@ -39,11 +39,11 @@ FILE_CATEGORIES = {
 }
 
 # Change this to the folder you want to organize.
-TARGET_FOLDER = Path.home() / "Downloads"
+TARGET_FOLDER = Path.home() / "OneDrive" / "Desktop" / "Organizer_Test"
 
 # Keep True for a safe preview.
 # Change to False after checking the preview.
-DRY_RUN = True
+DRY_RUN = False
 
 
 def get_destination(folder, filename):
