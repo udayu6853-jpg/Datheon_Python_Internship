@@ -1,82 +1,120 @@
-# Datheon Python Internship
+# Datheon Python Programming Internship
 
-Python programming projects completed as part of the Datheon Python Programming Internship.
+This repository contains the Python projects completed as part of my **Datheon Python Programming Internship**. These projects helped me practice Python programming, file handling, CSV operations, data processing, and automation.
 
-## Task 1: Hangman Word Guessing Game
+## 📌 Projects
 
-A console-based word guessing game built with Python.
+### Task 1: Hangman Game
+A console-based word-guessing game in which the player guesses a hidden word one letter at a time.
 
-### Features
-- Randomly selects a word from `words.txt`.
-- Allows letter-by-letter guessing.
-- Displays ASCII hangman stages.
-- Limits incorrect guesses to six attempts.
-- Tracks previously guessed letters.
-- Prevents duplicate guesses from reducing attempts.
-- Displays victory and defeat messages.
+**Features**
+- Random word selection from `words.txt`
+- Limited incorrect guesses
+- Displays the current word progress
+- Tracks guessed letters
+- ASCII hangman display
 
-### Files
-- `hangman.py` — Hangman game source code.
-- `words.txt` — Word list used by the game.
+**Files:** `hangman.py`, `words.txt`
 
-### Run Task 1
+### Task 2: Stock Portfolio Performance Tracker
+A Python application that tracks stock investments and calculates portfolio performance using stock price data.
+
+**Features**
+- Accepts stock tickers, purchase prices, and quantities
+- Retrieves available stock price data using `yfinance`
+- Calculates investment value, current value, profit or loss, and percentage return
+- Reads stock data from CSV files
+- Exports portfolio results to `portfolio_summary.csv`
+
+**Files:** `portfolio.py`, `constituents.csv`, `portfolio_summary.csv`
+
+### Task 3: Automated File Organizer
+A Python utility that organizes files into folders based on their extensions.
+
+**Features**
+- Uses `os.scandir()` to scan files
+- Uses `shutil.move()` to move files
+- Categorizes files into Documents, Images, Videos, Archives, and Code
+- Handles duplicate filenames by generating alternative names
+- Handles permission and file-operation errors
+- Supports preview mode before moving files
+
+**File:** `organizer.py`
+
+## 🛠️ Technologies Used
+
+- Python 3
+- CSV file handling
+- `os` and `pathlib`
+- `shutil`
+- `random`
+- `yfinance`
+- Basic exception handling
+
+## ⚙️ Installation and Setup
+
+1. Install Python 3 from the official Python website.
+2. Clone this repository:
+
+   ```bash
+   git clone https://github.com/udayu6853-jpg/Datheon_Python_Internship.git
+   ```
+
+3. Navigate to the project directory:
+
+   ```bash
+   cd Datheon_Python_Internship
+   ```
+
+4. Install the dependency required for the stock tracker:
+
+   ```bash
+   python -m pip install yfinance
+   ```
+
+## ▶️ How to Run the Projects
+
+Run each program separately from the project directory.
+
+**Task 1 — Hangman**
+
 ```bash
 python hangman.py
 ```
 
-## Task 2: Stock Portfolio Performance Tracker
-
-A Python console application that calculates portfolio investment value and profit or loss using stock market data.
-
-### Features
-- Validates ticker symbols using `constituents.csv`.
-- Accepts purchase prices and share quantities.
-- Retrieves the latest available daily closing price through `yfinance`.
-- Calculates invested amount, current estimated value, profit/loss, and percentage return.
-- Displays a formatted portfolio summary.
-- Saves portfolio results to a CSV file.
-
-**Market data note:** Prices may be delayed or unavailable and are not guaranteed to be live trading quotes. The output is for educational purposes, not investment advice.
-
-### Files
-- `portfolio.py` — Stock portfolio tracker.
-- `constituents.csv` — S&P 500 company symbols.
-- `portfolio_summary.csv` — Optional example output from a test run.
-
-### Requirements
-- Python 3
-- Internet connection for market data
-- `yfinance` Python package
-
-### Install the dependency
-```bash
-python -m pip install yfinance
-```
-
-### Run Task 2
-Keep `portfolio.py` and `constituents.csv` in the same folder, then run:
+**Task 2 — Stock Portfolio Tracker**
 
 ```bash
 python portfolio.py
 ```
 
-The program generates or updates `portfolio_summary.csv` when stock data is retrieved successfully.
+**Task 3 — File Organizer**
 
-## Technologies Used
-- Python 3
-- `random`
-- `csv`
-- File handling
-- `yfinance`
+```bash
+python organizer.py
+```
 
-## Learning Outcomes
-- Functions and control flow
-- Lists, sets, and dictionaries
-- Input validation
-- File handling with CSV
-- Working with external market-data libraries
-- Calculating percentage gain and loss
-- Building interactive command-line applications
+Before running the organizer, check the target folder and preview setting in `organizer.py`. Keep preview mode enabled until you have verified which files will be organized.
 
-## Internship
-These projects were developed as part of my Python programming practice for the Datheon Python Programming Internship.
+## 📚 Learning Outcomes
+
+Through these projects, I practiced:
+
+- Python fundamentals and control flow
+- Functions, modules, and exception handling
+- Working with CSV files
+- Using external Python libraries and stock market data
+- File and directory operations
+- Automating repetitive tasks
+- Testing and debugging Python applications
+- Managing projects with Git and GitHub
+
+## 👨‍💻 Author
+
+**Uday**
+
+GitHub: [udayu6853-jpg](https://github.com/udayu6853-jpg)
+
+---
+
+*Developed as part of the Datheon Python Programming Internship.*
