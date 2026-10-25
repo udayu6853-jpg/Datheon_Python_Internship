@@ -1,67 +1,82 @@
 # Datheon Python Internship
 
-## Task 1: Hangman Game
+Python programming projects completed as part of the Datheon Python Programming Internship.
 
-A command-line Hangman game developed using Python as part of the Datheon Python Programming Internship.
+## Task 1: Hangman Word Guessing Game
 
-## Features
+A console-based word guessing game built with Python.
 
-- Randomly selects a secret word from `words.txt`.
-- Allows the player to guess one letter at a time.
-- Displays correctly guessed letters and hidden letters.
-- Tracks incorrect guesses and displays ASCII hangman stages.
-- Prevents repeated guesses from counting as new attempts.
-- Validates user input.
-- Provides an option to play another round.
+### Features
+- Randomly selects a word from `words.txt`.
+- Allows letter-by-letter guessing.
+- Displays ASCII hangman stages.
+- Limits incorrect guesses to six attempts.
+- Tracks previously guessed letters.
+- Prevents duplicate guesses from reducing attempts.
+- Displays victory and defeat messages.
 
-## Technologies Used
+### Files
+- `hangman.py` — Hangman game source code.
+- `words.txt` — Word list used by the game.
 
-- Python 3
-- Python standard library (`random`)
-- File handling
-
-## Project Files
-
-| File | Description |
-|---|---|
-| `hangman.py` | Main game program |
-| `words.txt` | Word list used to select secret words |
-
-## How to Run
-
-1. Install Python 3 on your computer.
-2. Download or clone this repository.
-3. Keep `hangman.py` and `words.txt` in the same folder.
-4. Open a terminal in that folder.
-5. Run the command:
-
+### Run Task 1
 ```bash
 python hangman.py
 ```
 
-If your system uses `python3`, run:
+## Task 2: Stock Portfolio Performance Tracker
 
+A Python console application that calculates portfolio investment value and profit or loss using stock market data.
+
+### Features
+- Validates ticker symbols using `constituents.csv`.
+- Accepts purchase prices and share quantities.
+- Retrieves the latest available daily closing price through `yfinance`.
+- Calculates invested amount, current estimated value, profit/loss, and percentage return.
+- Displays a formatted portfolio summary.
+- Saves portfolio results to a CSV file.
+
+**Market data note:** Prices may be delayed or unavailable and are not guaranteed to be live trading quotes. The output is for educational purposes, not investment advice.
+
+### Files
+- `portfolio.py` — Stock portfolio tracker.
+- `constituents.csv` — S&P 500 company symbols.
+- `portfolio_summary.csv` — Optional example output from a test run.
+
+### Requirements
+- Python 3
+- Internet connection for market data
+- `yfinance` Python package
+
+### Install the dependency
 ```bash
-python3 hangman.py
+python -m pip install yfinance
 ```
 
-## How to Play
+### Run Task 2
+Keep `portfolio.py` and `constituents.csv` in the same folder, then run:
 
-1. Run the program.
-2. Enter one English letter when prompted.
-3. Continue guessing until you reveal the word or use all six incorrect attempts.
-4. Choose whether to play another round.
+```bash
+python portfolio.py
+```
+
+The program generates or updates `portfolio_summary.csv` when stock data is retrieved successfully.
+
+## Technologies Used
+- Python 3
+- `random`
+- `csv`
+- File handling
+- `yfinance`
 
 ## Learning Outcomes
-
-- Python functions and loops
-- Conditional statements
-- Lists and sets
-- Random selection
-- File handling
+- Functions and control flow
+- Lists, sets, and dictionaries
 - Input validation
-- Basic game development
+- File handling with CSV
+- Working with external market-data libraries
+- Calculating percentage gain and loss
+- Building interactive command-line applications
 
 ## Internship
-
-This project is part of my Python programming practice for the Datheon Python Programming Internship.
+These projects were developed as part of my Python programming practice for the Datheon Python Programming Internship.
