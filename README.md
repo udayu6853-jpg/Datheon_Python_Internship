@@ -1,17 +1,13 @@
-# Datheon Python Programming Internship
-
-This repository contains the Python projects completed as part of my Datheon Python Programming Internship. These projects helped me practice Python programming, file handling, CSV operations, data processing, automation, regular expressions, and object-oriented programming (OOP).
-
-## 📌 Projects
-
-### Task 1: Hangman Game
-
+Datheon Python Programming Internship
+This repository contains the Python projects completed as part of my Datheon Python Programming Internship. These projects helped me practice Python programming, file handling, CSV operations, data processing, and automation.
+📌 Projects
+Task 1: Hangman Game
 A console-based word-guessing game in which the player guesses a hidden word one letter at a time.
 
 **Features**
 - Random word selection from `words.txt`
 - Limited incorrect guesses
-- Displays the current word progress
+- Displays current word progress
 - Tracks guessed letters
 - ASCII hangman display
 
@@ -55,43 +51,17 @@ A Python terminal chatbot that uses regular expressions and a JSON FAQ dataset t
 - Provides fallback responses for unrecognized questions
 - Exits gracefully using bye, exit, or quit
 - Handles missing or invalid JSON data with error messages
-
-**Files:** `chatbot.py`, `faq.json`
-
-### Task 5: Enterprise Smart Inventory & Asset System
-
-A modular, object-oriented Python application that manages library items, including books, magazines, and digital media.
-
-**Features**
-- Uses an abstract base class, `LibraryItem`, with Python's `abc` module
-- Implements inheritance through `Book`, `Magazine`, and `DigitalMedia`
-- Uses encapsulation with private attributes and property decorators
-- Implements polymorphism through item-specific fee calculations and metadata display
-- Uses dunder methods such as `__str__`, `__len__`, `__repr__`, and `__eq__`
-- Records checkout dates and manages item checkout and return operations
-- Displays inventory details and item availability
-- Calculates return fees based on the number of days entered
-- Maintains an audit report of inventory actions
-
-**Files:** `models.py`, `inventory.py`
-
-## 🛠️ Technologies Used
-
+Files: chatbot.py, faq.json
+🛠️ Technologies Used
 - Python 3
-- Object-oriented programming (OOP)
-- Abstract base classes (`abc`)
-- Properties and encapsulation
 - CSV and JSON file handling
-- Regular expressions (`re`)
-- File and directory operations (`os`, `pathlib`, `shutil`)
-- Random word selection (`random`)
-- Stock market data (`yfinance`)
-- Date and time handling (`datetime`)
+- Regular expressions (re)
+- os and pathlib
+- shutil
+- random
+- yfinance
 - Exception handling
-- Git and GitHub
-
-## ⚙️ Installation and Setup
-
+⚙️ Installation and Setup
 1. Install Python 3 from the official Python website.
 2. Clone this repository:
 
@@ -115,9 +85,7 @@ A modular, object-oriented Python application that manages library items, includ
 
 Run each program separately from the project directory.
 
-### Task 1 — Hangman Game
-
-```bash
+Task 1 — Hangman
 python hangman.py
 ```
 
@@ -125,34 +93,16 @@ python hangman.py
 
 ```bash
 python portfolio.py
-```
-
-### Task 3 — Automated File Organizer
-
-```bash
+Task 3 — File Organizer
 python organizer.py
 ```
 
 Before running the organizer, check the target folder and preview setting in `organizer.py`. Keep preview mode enabled until you have verified which files will be organized.
 
-### Task 4 — Terminal Chatbot
-
-```bash
+Task 4 — Chatbot
 python chatbot.py
-```
-
-The chatbot uses `faq.json`, which should remain in the same directory as `chatbot.py`.
-
-### Task 5 — Smart Inventory System
-
-```bash
-python inventory.py
-```
-
-The inventory application imports its classes from `models.py`. Keep both Python files in the same directory.
-
-## 📚 Learning Outcomes
-
+The chatbot uses faq.json, which should remain in the same directory as chatbot.py.
+📚 Learning Outcomes
 Through these projects, I practiced:
 
 - Python fundamentals and control flow
@@ -162,8 +112,6 @@ Through these projects, I practiced:
 - Using external Python libraries and stock market data
 - File and directory operations
 - Automating repetitive tasks
-- Object-oriented programming: abstraction, inheritance, encapsulation, and polymorphism
-- Implementing properties and special methods
 - Testing and debugging Python applications
 - Managing projects with Git and GitHub
 
