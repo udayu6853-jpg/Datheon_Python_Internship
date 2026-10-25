@@ -1,7 +1,11 @@
-Datheon Python Programming Internship
-This repository contains the Python projects completed as part of my Datheon Python Programming Internship. These projects helped me practice Python programming, file handling, CSV operations, data processing, and automation.
-📌 Projects
-Task 1: Hangman Game
+# Datheon Python Programming Internship
+
+This repository contains the Python projects completed as part of my Datheon Python Programming Internship. These projects helped me practice Python programming, file handling, CSV operations, data processing, automation, and object-oriented programming.
+
+## 📌 Projects
+
+### Task 1: Hangman Game
+
 A console-based word-guessing game in which the player guesses a hidden word one letter at a time.
 
 **Features**
@@ -51,18 +55,44 @@ A Python terminal chatbot that uses regular expressions and a JSON FAQ dataset t
 - Provides fallback responses for unrecognized questions
 - Exits gracefully using bye, exit, or quit
 - Handles missing or invalid JSON data with error messages
-Files: chatbot.py, faq.json
-🛠️ Technologies Used
+
+**Files:** `chatbot.py`, `faq.json`
+
+### Task 5: Enterprise Smart Inventory & Asset System
+
+A modular, object-oriented Python application that manages books, magazines, and digital media.
+
+**Features**
+- Abstract base class `LibraryItem` using the `abc` module
+- Inheritance through `Book`, `Magazine`, and `DigitalMedia`
+- Encapsulation using private attributes and property decorators
+- Polymorphism through item-specific fee calculations and metadata
+- Dunder methods: `__str__`, `__len__`, `__repr__`, and `__eq__`
+- Item checkout and return operations
+- Borrow-date tracking
+- Inventory display and availability status
+- Return-fee calculation based on the entered number of days
+- Audit reports for inventory actions
+
+**Files:** `models.py`, `inventory.py`
+
+## 🛠️ Technologies Used
+
 - Python 3
+- Object-oriented programming (OOP)
+- Abstract base classes and property decorators
 - CSV and JSON file handling
-- Regular expressions (re)
-- os and pathlib
-- shutil
-- random
-- yfinance
+- Regular expressions (`re`)
+- File operations (`os`, `pathlib`, `shutil`)
+- Random word selection (`random`)
+- Stock market data (`yfinance`)
+- Date and time handling (`datetime`)
 - Exception handling
-⚙️ Installation and Setup
-1. Install Python 3 from the official Python website.
+- Git and GitHub
+
+## ⚙️ Installation and Setup
+
+1. Install Python 3.
 2. Clone this repository:
 
    ```bash
@@ -85,7 +115,9 @@ Files: chatbot.py, faq.json
 
 Run each program separately from the project directory.
 
-Task 1 — Hangman
+### Task 1 — Hangman
+
+```bash
 python hangman.py
 ```
 
@@ -93,16 +125,34 @@ python hangman.py
 
 ```bash
 python portfolio.py
-Task 3 — File Organizer
+```
+
+### Task 3 — File Organizer
+
+```bash
 python organizer.py
 ```
 
 Before running the organizer, check the target folder and preview setting in `organizer.py`. Keep preview mode enabled until you have verified which files will be organized.
 
-Task 4 — Chatbot
+### Task 4 — Chatbot
+
+```bash
 python chatbot.py
-The chatbot uses faq.json, which should remain in the same directory as chatbot.py.
-📚 Learning Outcomes
+```
+
+Keep `faq.json` in the same directory as `chatbot.py`.
+
+### Task 5 — Smart Inventory System
+
+```bash
+python inventory.py
+```
+
+Keep `models.py` in the same directory as `inventory.py`.
+
+## 📚 Learning Outcomes
+
 Through these projects, I practiced:
 
 - Python fundamentals and control flow
@@ -112,6 +162,8 @@ Through these projects, I practiced:
 - Using external Python libraries and stock market data
 - File and directory operations
 - Automating repetitive tasks
+- Object-oriented programming: abstraction, inheritance, encapsulation, and polymorphism
+- Properties and special methods
 - Testing and debugging Python applications
 - Managing projects with Git and GitHub
 
